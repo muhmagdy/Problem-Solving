@@ -23,11 +23,11 @@ class Solution {
                 }
             }
         }
-        for(int row = 0; row < nRows; row++){
+        for(int row = 1; row < nRows; row++){
             if(matrix[row][0] == 0)
                 zeroRow(matrix, row, nCols);
         }
-        for(int col = 0; col < nCols; col++){
+        for(int col = 1; col < nCols; col++){
             if(matrix[0][col] == 0)
                 zeroCol(matrix, col, nRows);
         }
